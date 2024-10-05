@@ -1,0 +1,127 @@
+/* wishlist */
+.wishlist__pages {
+    margin-top: 112px;
+}
+
+.wishlist__header {
+    display: flex;
+}
+
+.no__wishlist {
+    color: #000000;
+    font-size: 1.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 550;
+}
+
+.no__cartitem {
+    text-align: center;
+}
+
+.wishlist__header--row {
+    display: flex;
+    margin-left: 230px;
+    gap: 63px;
+}
+
+.wishlist__heading.one {
+    margin-left: 170px;
+}
+
+.wishlist__heading {
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 630;
+}
+
+.wishlist__heading.three {
+    margin-left: 351px;
+}
+
+.btn__wishlist {
+    display: flex;
+    width: 193px;
+    justify-content: center;
+    gap: 2px;
+    min-width: 193px;
+    border-radius: 4px;
+    margin-top: -3px;
+    margin-left: 102px;
+}
+
+.btn__wishlist::after {
+    height: 52px;
+    width: 97px;
+}
+
+.btn__wishlist::before {
+    height: 52px;
+    width: 97px;
+}
+
+.btn__baner__hover:hover .icon__shopping {
+    color: #ff223d;
+}
+
+.icon__shopping {
+    position: relative;
+    z-index: 4;
+    font-size: 1.4rem;
+}
+
+.wishlist__product--img {
+    width: 100px;
+    margin-left: 30px;
+}
+
+.wishlist__line {
+    width: 100%;
+    height: 1px;
+    background: #dee2e6;
+    margin-top: 13px;
+}
+
+.wishlist__product {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.icon__delete {
+    width: 21px;
+    cursor: pointer;
+}
+
+.wishlist__product--name {
+    color: #292b2c;
+    font-size: 1.6rem;
+    margin-left: 39px;
+    width: 180px;
+}
+
+.wishlist__product--price {
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-left: 110px;
+}
+
+.wishlist__product--status {
+    width: 69px;
+    height: 23px;
+    border-radius: 20px;
+    background: #198754;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 72px;
+}
+
+.icon__delete {
+    margin-left: 101px;
+}
+/* wishlist */

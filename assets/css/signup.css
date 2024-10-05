@@ -1,0 +1,59 @@
+/* signup */
+
+.login__name::placeholder {
+    font-size: 1.6rem;
+}
+
+.login__confirmpassword::placeholder {
+    font-size: 1.6rem;
+}
+
+.login__email,
+.login__password,
+.login__name,
+.login__confirmpassword {
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 13px 17px;
+    transition: all 0.1s ease;
+}
+
+.form__group.email {
+    margin-top: 12px;
+}
+
+.form__group.password {
+    margin-top: -10px;
+}
+
+.form__group.confirm {
+    margin-top: 12px;
+}
+
+.login__email:focus {
+    border-color: rgb(123, 216, 245);
+}
+
+.login__password:focus {
+    border-color: rgb(123, 216, 245);
+}
+
+.login__name:focus {
+    border-color: rgb(123, 216, 245);
+}
+
+.login__confirmpassword:focus {
+    border-color: rgb(123, 216, 245);
+}
+
+.login__error {
+    margin-top: 8px;
+    font-size: 1.4rem;
+    color: #e91e39;
+    visibility: hidden;
+}
+
+/* signup */

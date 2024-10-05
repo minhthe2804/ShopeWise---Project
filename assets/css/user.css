@@ -1,0 +1,104 @@
+/* user information */
+.userinfo {
+    margin-top: 80px;
+}
+
+.userinfo__content {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ededed;
+    padding-bottom: 15px;
+}
+
+.userinfo__heading {
+    color: #000;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.userinfo__form {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.label__text {
+    color: #292b2c;
+    font-size: 1.8rem;
+}
+
+.userinfo__group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.label__text {
+    width: 25%;
+}
+
+.userinfo__name,
+.userinfo__date,
+.userinfo__phone,
+.userinfo__email {
+    width: 75%;
+}
+
+.gender__row {
+    display: flex;
+    align-items: center;
+}
+
+.userinfo__male {
+    margin-left: 20px;
+}
+
+.userinfo__female {
+    margin-left: 14px;
+}
+
+.btn__userinfo--hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__userinfo {
+    width: 140px;
+    height: 55px;
+}
+
+.btn__userinfo::before {
+    height: 54px;
+}
+
+.btn__userinfo::after {
+    height: 54px;
+}
+
+.btn__userinfo--row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn__userinfo--hover_color:hover .btn__userinfo--color p {
+    color: #47d864;
+}
+
+.btn__userinfo--color {
+    border-color: #47d864;
+}
+
+.btn__userinfo--color::before {
+    background: #47d864;
+}
+
+.btn__userinfo--color::after {
+    background: #47d864;
+}
+/* user information */

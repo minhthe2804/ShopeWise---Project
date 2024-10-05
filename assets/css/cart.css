@@ -1,0 +1,410 @@
+/* cart */
+.wishlist__header--row.cart__header--row {
+    margin-left: 150px;
+}
+
+.cart__heading {
+    white-space: nowrap;
+}
+
+.wishlist__heading.cart__three {
+    margin-left: 133px;
+}
+
+.cart__product {
+    position: relative;
+}
+
+.cart__product--color {
+    margin-left: 108px;
+}
+
+.wishlist__line.cart__line {
+    width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wishlist__product--img.cart__product--img {
+    margin-left: 97px;
+}
+
+.wishlist__product--name.cart__product--name {
+    margin-left: 24px;
+}
+
+.cart__product--size {
+    position: absolute;
+    top: 48px;
+    left: 610px;
+}
+
+.cart__product--quantity {
+    position: absolute;
+    top: 48px;
+    left: 732px;
+}
+
+.wishlist__product--price.cart__product--price {
+    position: absolute;
+    top: 48px;
+    left: 717px;
+}
+
+.wishlist__product--status.cart__product--status {
+    position: absolute;
+    left: 883px;
+}
+
+.btn__baner__hover.btn__cart--hover {
+    position: absolute;
+    top: 6px;
+    left: 1062px;
+}
+
+.btn__banner.btn__cart {
+    width: 88px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__banner.btn__cart::before {
+    height: 39px;
+}
+
+.btn__banner.btn__cart::after {
+    height: 39px;
+}
+
+.cart__delete {
+    position: absolute;
+    width: 21px;
+    left: 1196px;
+    cursor: pointer;
+}
+
+.btn__all {
+    margin-left: 918px;
+}
+/* cart */
+
+/* adders */
+.addres {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    inset: 0;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.addres__blog {
+    width: 400px;
+    background: #fff;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.adders__content {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addres__heading {
+    margin-top: 10px;
+    color: #000000;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 550;
+}
+
+.adders__group {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    width: 40%;
+    color: #292b2c;
+    font-weight: 450;
+}
+
+input {
+    width: 60%;
+    outline: none;
+    border: none;
+    border: 1px solid #a09999;
+    transition: all 0.5s ease;
+    padding-left: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input:focus {
+    border-color: #5b9ab9;
+}
+
+.adders__total--row {
+    margin-top: 15px;
+    display: flex;
+}
+
+.adders__total--name {
+    color: #292b2c;
+    font-weight: 500;
+}
+
+.adders__total {
+    color: #292b2c;
+    margin-left: auto;
+}
+
+.btn__adders {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__adders--row {
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn__adders__hover {
+    width: 130px;
+}
+
+.btn__adders::before {
+    height: 39px;
+}
+
+.btn__adders::after {
+    height: 39px;
+}
+
+.btn__adders--out {
+    border-color: #333333;
+}
+
+.btn__adders__hover:hover .btn__adders--out p {
+    color: #333333;
+}
+
+.btn__adders--out::before {
+    background: #333333;
+}
+
+.btn__adders--out::after {
+    background: #333333;
+}
+/* adders */
+
+/* purchased */
+.purchased {
+    margin-top: 50px;
+}
+
+.purchased__oderheading {
+    color: #000000;
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.purchased__list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.purchased__item {
+    color: #292b2c;
+    font-size: 1.8rem;
+    font-weight: 550;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.purchased__item.active {
+    color: #ff324d;
+}
+
+.purchased__item:hover {
+    color: #ff324d;
+}
+
+.purchased__pages {
+    margin-top: 15px;
+}
+
+.purchased__header {
+    display: flex;
+}
+
+.purchased__header {
+    display: flex;
+}
+
+.purchased__heading--row {
+    display: flex;
+    margin-left: 99px;
+}
+
+.purchased__product,
+.purchased__heading,
+.purcharsed__statusSucsess {
+    color: #292b2c;
+    font-size: 1.6rem;
+    font-weight: 430;
+}
+
+.purchased__product {
+    margin-left: 171px;
+}
+
+.purcharsed__statusSucsess {
+    margin-left: auto;
+}
+
+.purchased__heading--address,
+.purchased__heading--price,
+.purchased__heading--status,
+.purchased__heading--phone {
+    margin-left: 80px;
+}
+
+.img__purchased {
+    width: 100px;
+}
+
+.purchased__body {
+}
+
+.purchased__body--product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+
+.purchased__name {
+    color: #292b2c;
+    font-size: 1.6rem;
+    margin-left: 40px;
+    width: 160px;
+}
+
+.purchased__phone {
+    position: absolute;
+    color: #292b2c;
+    font-size: 1.6rem;
+    top: 40px;
+    left: 459px;
+}
+
+.purchased__receiver {
+    position: absolute;
+    color: #292b2c;
+    font-size: 1.6rem;
+    top: 40px;
+    left: 331px;
+    width: 75px;
+}
+
+.purchased__adderss {
+    position: absolute;
+    color: #292b2c;
+    font-size: 1.6rem;
+    top: 40px;
+    left: 611px;
+    width: 130px;
+}
+
+.purchased__price {
+    position: absolute;
+    color: #292b2c;
+    font-size: 1.6rem;
+    top: 40px;
+    left: 759px;
+}
+
+.purchased__status {
+    position: absolute;
+    color: #292b2c;
+    font-size: 1.6rem;
+    top: 40px;
+    left: 864px;
+}
+
+.purchased__body--display {
+    display: none;
+}
+
+.purchased__body--display.display {
+    display: block;
+}
+
+.btn__purchased {
+    position: absolute;
+    margin-top: 0;
+    top: 40px;
+    left: 1072px;
+    width: 56px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #47d864;
+}
+
+.btn__purchased::before {
+    width: 51%;
+    height: 36px;
+    background: #47d864;
+}
+
+.btn__purchased::after {
+    width: 52%;
+    height: 36px;
+    background: #47d864;
+}
+
+.btn__purchased--hover:hover .btn__purchased p {
+    color: #47d864;
+}
+
+.btn__purchased--hover .btn__purchased p {
+    font-size: 1.4rem;
+}
+
+.btn__purchased--hover_red:hover .btn__purchased--red p {
+    color: #ff324d;
+}
+
+.btn__purchased--red {
+    border-color: #ff324d;
+}
+
+.btn__purchased--red::before {
+    background: #ff324d;
+}
+
+.btn__purchased--red::after {
+    background: #ff324d;
+}
+/* purchased */
+
+

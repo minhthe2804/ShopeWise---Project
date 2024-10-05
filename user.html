@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User</title>
+        <!-- link css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/wishlist.css" />
+        <link rel="stylesheet" href="./assets/css/signin.css" />
+        <link rel="stylesheet" href="./assets/css/cart.css" />
+        <link rel="stylesheet" href="./assets/css/user.css" />
+        <!-- link font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Animation -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <header class="header__top content">
+                <!-- header contact -->
+                <div class="header__contact">
+                    <div class="header__contact--row">
+                        <div class="country">
+                            <img
+                                src="https://bestwebcreator.com/shopwise/demo/assets/images/eng.png"
+                                alt=""
+                                class="img__country"
+                            />
+                            <p class="country__name">English</p>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-7 caret"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                            />
+                        </svg>
+                    </div>
+                    <div class="header__contact--row">
+                        <p class="usd__name">USD</p>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-7 caret"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                            />
+                        </svg>
+                    </div>
+                    <div class="header__contact--row">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-7"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                            />
+                        </svg>
+                        <p class="phone__number">123-456-7890</p>
+                    </div>
+                </div>
+                <!-- header user -->
+                <div class="header__user">
+                    <div class="header__user--row">
+                        <i class="fa-solid fa-shuffle compare__icon"></i>
+                        <p class="compare">Compare</p>
+                    </div>
+                    <a href="./wishlist.html">
+                        <div class="header__user--row wishlist">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-8 withlist__icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                                />
+                            </svg>
+                            <p class="wishlist__name">Wishlist</p>
+                            <div class="wishlist__notify">
+                                <p class="wishlist__notify--number">0</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./signin.html">
+                        <div class="header__user--row users">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-8 user__icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                                />
+                            </svg>
+                            <p class="user">Login</p>
+                        </div>
+                    </a>
+                </div>
+            </header>
+            <div class="header__line"></div>
+            <header class="header__menu content">
+                <a href="./index.html">
+                    <img
+                        src="https://bestwebcreator.com/shopwise/demo/assets/images/logo_dark.png"
+                        alt=""
+                        class="img__logo"
+                    />
+                </a>
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item active">
+                            <a href="">HOME</a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6 active"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">PAGES</a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">PRODUCTS</a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">BLOG</a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">SHOP</a>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                                />
+                            </svg>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                <div class="cart__icon--blog">
+                    <a href="./cart.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-9 cart__icon"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                            />
+                        </svg>
+                    </a>
+                </div>
+                <div class="notify"><p class="notify__number">0</p></div>
+                <!-- cash cart -->
+                <div class="cash__cart">
+                    <!-- <div class="cash__product cash__content">
+                        <div class="cash__img">
+                            <img
+                                src="https://bestwebcreator.com/shopwise/demo/assets/images/cart_thamb1.jpg"
+                                alt=""
+                                class="img__cash"
+                            />
+                        </div>
+                        <div class="cash__info">
+                            <p class="cash__name">Variable Product 001</p>
+                            <p class="cash__price">1 x $78.00</p>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-19 cash__delete"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18 18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                    <div class="cash__line"></div>
+                    <div class="cash__product cash__content">
+                        <div class="cash__img">
+                            <img
+                                src="https://bestwebcreator.com/shopwise/demo/assets/images/cart_thamb1.jpg"
+                                alt=""
+                                class="img__cash"
+                            />
+                        </div>
+                        <div class="cash__info">
+                            <p class="cash__name">Variable Product 001</p>
+                            <p class="cash__price">1 x $78.00</p>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-19 cash__delete"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18 18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                    <div class="cash__line"></div> -->
+                    <!-- <div class="cash__subtotal--row cash__content">
+                        <p class="cash__subtotal--name">Subtotal:</p>
+                        <p class="cash__subtotal--price">$159.00</p>
+                    </div>
+                    <div class="cash__interact">
+                        <div class="btn__baner__hover btn__cash--hover">
+                            <a href="" class="btn__banner btn__cash--viewcart"
+                                ><p>View Cart</p></a
+                            >
+                        </div>
+                        <div class="btn__baner__hover">
+                            <a href="" class="btn__banner btn__cash--checkout"
+                                ><p>Checkout</p></a
+                            >
+                        </div>
+                    </div> -->
+                </div>
+            </header>
+        </header>
+        <main>
+            <!-- Login navbar -->
+            <section class="login__navbar">
+                <section class="content">
+                    <div class="login__navbar--row">
+                        <p class="login__navbar--heading">User</p>
+                        <div class="navbar__menu--row">
+                            <p class="login__navbar--title hover">Home</p>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-14 login__navbar--icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                />
+                            </svg>
+                            <p class="login__navbar--title hover">Pages</p>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-14 login__navbar--icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                />
+                            </svg>
+
+                            <p class="login__navbar--title opacity">User</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- user information -->
+            <div class="userinfo">
+                <div class="userinfo__content">
+                    <p class="userinfo__heading">User Infomation</p>
+                    <form action="" class="userinfo__form">
+                        <div class="userinfo__group">
+                            <label for="userinfo__name" class="label__text"
+                                >Tên</label
+                            >
+                            <input
+                                type="text"
+                                name="name"
+                                id="userinfo__name"
+                                class="userinfo__name"
+                            />
+                        </div>
+                        <div class="userinfo__group">
+                            <label for="userinfo__date" class="label__text"
+                                >Ngày Sinh</label
+                            >
+                            <input
+                                type="text"
+                                name="date"
+                                id="userinfo__date"
+                                class="userinfo__date"
+                            />
+                        </div>
+                        <div class="userinfo__group">
+                            <label for="" class="label__text">Giới Tính</label>
+                            <div class="gender__row">
+                                <label for="male" class="label__text"
+                                    >Nam</label
+                                >
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="male"
+                                    class="userinfo__male"
+                                    checked
+                                />
+                            </div>
+                            <div class="gender__row">
+                                <label for="female" class="label__text"
+                                    >Nữ</label
+                                >
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    id="female"
+                                    class="userinfo__female"
+                                />
+                            </div>
+                        </div>
+                        <div class="userinfo__group">
+                            <label for="userinfo__phone" class="label__text"
+                                >Số Điện Thoại</label
+                            >
+                            <input
+                                type="text"
+                                name="phone"
+                                id="userinfo__phone"
+                                class="userinfo__phone"
+                            />
+                        </div>
+                        <div class="userinfo__group">
+                            <label for="userinfo__email" class="label__text"
+                                >Email</label
+                            >
+                            <input
+                                type="text"
+                                name="email"
+                                id="userinfo__email"
+                                class="userinfo__email"
+                            />
+                        </div>
+                        <div class="btn__userinfo--row">
+                            <div
+                                class="btn__baner__hover btn__userinfo--hover btn__userinfo--hover_color"
+                            >
+                                <a
+                                    href=""
+                                    class="btn__banner btn__userinfo btn__userinfo--color"
+                                    ><p>Update</p></a
+                                >
+                            </div>
+                            <div class="btn__baner__hover btn__userinfo--hover">
+                                <a
+                                    href=""
+                                    class="btn__banner btn__userinfo btn__userinfo--fix"
+                                    ><p>Fix</p></a
+                                >
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- subscribe -->
+            <section class="subscribe">
+                <section class="subscribe__content">
+                    <div class="subscribe__row">
+                        <div class="heading__subscribe">
+                            <p class="subscribe__heading">
+                                Subscribe Our Newsletter
+                            </p>
+                        </div>
+                        <form class="subcribe__form" action="">
+                            <input
+                                type="text"
+                                name="email"
+                                id="subscribe__email"
+                                class="subscribe__email"
+                                placeholder="Enter Email Address"
+                            />
+                            <button type="button" class="btn__subcribe">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__row">
+                    <!-- column 1 -->
+                    <div class="footer__column one">
+                        <img
+                            src="https://bestwebcreator.com/shopwise/demo/assets/images/logo_light.png"
+                            alt=""
+                            class="footer__logo"
+                        />
+                        <p class="footer__desc">
+                            If you are going to use of Lorem Ipsum need to be
+                            sure there isn't hidden of text
+                        </p>
+                        <div class="footer__social">
+                            <i class="fa-brands fa-facebook icon__social"></i>
+                            <i class="fa-brands fa-twitter icon__social"></i>
+                            <i class="fa-brands fa-google icon__social"></i>
+                            <i class="fa-brands fa-youtube icon__social"></i>
+                            <i class="fa-brands fa-instagram icon__social"></i>
+                        </div>
+                    </div>
+                    <!-- column 2 -->
+                    <div class="footer__column left">
+                        <p class="footer__heading">Useful Links</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">FAQ</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Location</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Affiliates</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- column 3 -->
+                    <div class="footer__column">
+                        <p class="footer__heading">Category</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="">Men</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Woman</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Kids</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Best Saller</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">New Arrivals</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- column 4 -->
+                    <div class="footer__column">
+                        <p class="footer__heading">My Account</p>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="">My Account</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Discount</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Returns</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Orders History</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="">Order Tracking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- column 5 -->
+                    <div class="footer__column">
+                        <p class="footer__heading">Contact Info</p>
+                        <div class="footer__contact--row">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="contact__address">
+                                123 Street, Old Trafford, New South London , UK
+                            </div>
+                        </div>
+                        <div class="footer__contact--row two">
+                            <i class="fa-regular fa-envelope"></i>
+                            <div class="contact__title">info@sitename.com</div>
+                        </div>
+                        <div class="footer__contact--row three">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-12 icon__mobile"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                                />
+                            </svg>
+
+                            <div class="contact__title">+ 457 789 789 65</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="footer__content--two">
+                <div class="footer__row--two">
+                    <p class="footer__allright">
+                        © 2020 All Rights Reserved by Bestwebcreator
+                    </p>
+                    <div class="footer__bank--row">
+                        <img
+                            src="https://bestwebcreator.com/shopwise/demo/assets/images/visa.png"
+                            alt=""
+                            class="img__bank"
+                        />
+                        <img
+                            src="https://bestwebcreator.com/shopwise/demo/assets/images/discover.png"
+                            alt=""
+                            class="img__bank"
+                        />
+                        <img
+                            src="https://bestwebcreator.com/shopwise/demo/assets/images/master_card.png"
+                            alt=""
+                            class="img__bank"
+                        />
+                        <img
+                            src="https://bestwebcreator.com/shopwise/demo/assets/images/paypal.png"
+                            alt=""
+                            class="img__bank"
+                        />
+                        <img
+                            src="https://bestwebcreator.com/shopwise/demo/assets/images/amarican_express.png"
+                            alt=""
+                            class="img__bank"
+                        />
+                    </div>
+                    <a href="#" class="footer__carret">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-13 icon__carret"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                            />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- toast cart-->
+        <div class="toast__cart"></div>
+
+       <!-- overlay -->
+       <div class="overlay"></div>
+        <script src="./js/user.js"></script>
+    </body>
+</html>
