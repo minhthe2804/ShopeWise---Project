@@ -491,10 +491,6 @@ function cart(infoDetail, sizeCart, colorRow, number, cartList) {
         Number(infoDetail.quantity) * Number(infoDetail.price.slice(1))
     ).toString();
     console.log(infoDetail);
-    if (!currentUser) {
-        alert("Bạn cần phải đăng nhập để thêm sản phẩm");
-        return;
-    }
     listCart.push(infoDetail);
     addCartSucces();
     notifyCart();

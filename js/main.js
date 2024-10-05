@@ -255,9 +255,6 @@ function addToWish(icon, index) {
             wishlist.color === itemWish.color &&
             wishlist.money === itemWish.money
     );
-    if (userSignin() === false) {
-        return;
-    }
     if (!valid) {
         listWish.push(itemWish);
         localStorage.setItem("listWish", JSON.stringify(listWish));
@@ -807,10 +804,6 @@ function cart(infoDetail, sizeCart, colorRow, number, cartList) {
         Number(infoDetail.quantity) * Number(infoDetail.price.slice(1))
     ).toString();
     console.log(infoDetail);
-    if (!currentUser) {
-        alert("Bạn cần phải đăng nhập để thêm sản phẩm");
-        return;
-    }
     listCart.push(infoDetail);
     addCartSucces(string);
     notifyCart();
@@ -839,11 +832,6 @@ let compareTwo = JSON.parse(localStorage.getItem("compareTwo")) || [];
 let compareThree = JSON.parse(localStorage.getItem("compareThree")) || [];
 
 function addCompare(info) {
-    // Check if the product is already in one of the comparison slots
-    if (!currentUser) {
-        alert("Bạn cần phải đăng nhập để thêm sản phẩm vào mục so sánh !");
-        return;
-    }
     // Add the product to the first empty comparison slot
     if (compareOne.length === 0) {
         compareOne.push(info);
