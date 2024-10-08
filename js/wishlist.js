@@ -795,7 +795,6 @@ function genderOverlay() {
     const iconOverlay = document.querySelector(".overlay__delete");
     const overlayLabel = document.querySelector(".overlay__label");
     // css lai
-    
 
     function overlayDelete() {
         overlayBlog.remove();
@@ -811,8 +810,6 @@ function genderOverlay() {
 window.addEventListener("load", () => {
     genderCash();
     setTimeout(() => {
-        genderOverlay();
+        // genderOverlay();
     }, 2000);
 });
-
-

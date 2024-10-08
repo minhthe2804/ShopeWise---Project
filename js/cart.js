@@ -989,7 +989,7 @@ function genderOverlay() {
 
 // load lai trang
 window.addEventListener("load", () => {
-    setTimeout(() => {
-        genderOverlay();
-    }, 2000);
+    // setTimeout(() => {
+    //     genderOverlay();
+    // }, 2000);
 });

@@ -390,6 +390,6 @@ function genderOverlay() {
 window.addEventListener("load", () => {
     genderCash();
     setTimeout(() => {
-        genderOverlay();
+        // genderOverlay();
     }, 2000);
 });

@@ -1926,86 +1926,86 @@ nextBtnFe.addEventListener("click", slipProductNext);
 prevBtnFe.addEventListener("click", slipProductPrev);
 
 // Xu li hien overlay
-const overlay = document.querySelector(".overlay");
+// const overlay = document.querySelector(".overlay");
 
-function genderOverlay() {
-    overlay.style.opacity = "1";
-    overlay.style.visibility = "visible";
-    overlay.innerHTML = `<div class="overlay__blog">
-                <div class="overlay__content">
-                    <div class="overlay__img">
-                        <img
-                            src="./assets/img/screenshot-1721982200581.png"
-                            alt=""
-                            class="img__overlay"
-                        />
-                    </div>
-                    <div class="overlay__info">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="size-21 overlay__delete" 
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M6 18 18 6M6 6l12 12"
-                            />
-                        </svg>
-                        <div class="overlay__info--body">
-                            <p class="overlay__heading">
-                                Subscribe And Get 25% Discount!
-                            </p>
-                            <p class="overlay__desc">
-                                Subscribe to the newsletter to receive updates
-                                about new products.
-                            </p>
-                            <input
-                                type="text"
-                                name="email"
-                                id="overlay__email"
-                                class="overlay__email"
-                                placeholder="Enter Your Email"
-                            />
-                            <div class="btn__baner__hover btn__overlay__hover">
-                                <a
-                                    href="" 
-                                    class="btn__banner btn__overlay"
-                                    ><p>SUBSCRIBE</p></a
-                                >
-                            </div>
-                            <div class="overlay__checkbox--row">
-                                <input type="checkbox" name="" id="check" class="overley__check" >
-                                <label for="check" class="overlay__label">Don't show this popup again!</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>`;
-    // lay DOM
-    const overlayBlog = document.querySelector(".overlay__blog")
-    const iconOverlay = document.querySelector(".overlay__delete")
+// function genderOverlay() {
+//     overlay.style.opacity = "1";
+//     overlay.style.visibility = "visible";
+//     overlay.innerHTML = `<div class="overlay__blog">
+//                 <div class="overlay__content">
+//                     <div class="overlay__img">
+//                         <img
+//                             src="./assets/img/screenshot-1721982200581.png"
+//                             alt=""
+//                             class="img__overlay"
+//                         />
+//                     </div>
+//                     <div class="overlay__info">
+//                         <svg
+//                             xmlns="http://www.w3.org/2000/svg"
+//                             fill="none"
+//                             viewBox="0 0 24 24"
+//                             stroke-width="1.5"
+//                             stroke="currentColor"
+//                             class="size-21 overlay__delete" 
+//                         >
+//                             <path
+//                                 stroke-linecap="round"
+//                                 stroke-linejoin="round"
+//                                 d="M6 18 18 6M6 6l12 12"
+//                             />
+//                         </svg>
+//                         <div class="overlay__info--body">
+//                             <p class="overlay__heading">
+//                                 Subscribe And Get 25% Discount!
+//                             </p>
+//                             <p class="overlay__desc">
+//                                 Subscribe to the newsletter to receive updates
+//                                 about new products.
+//                             </p>
+//                             <input
+//                                 type="text"
+//                                 name="email"
+//                                 id="overlay__email"
+//                                 class="overlay__email"
+//                                 placeholder="Enter Your Email"
+//                             />
+//                             <div class="btn__baner__hover btn__overlay__hover">
+//                                 <a
+//                                     href="" 
+//                                     class="btn__banner btn__overlay"
+//                                     ><p>SUBSCRIBE</p></a
+//                                 >
+//                             </div>
+//                             <div class="overlay__checkbox--row">
+//                                 <input type="checkbox" name="" id="check" class="overley__check" >
+//                                 <label for="check" class="overlay__label">Don't show this popup again!</label>
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>`;
+//     // lay DOM
+//     const overlayBlog = document.querySelector(".overlay__blog")
+//     const iconOverlay = document.querySelector(".overlay__delete")
 
-    function overlayDelete(){
-        overlayBlog.remove();
-        overlay.style.opacity = "0";
-        overlay.style.visibility = "hidden";
-    }
-    iconOverlay.addEventListener("click",()=>{
-        overlayDelete();
-    })
-}
+//     function overlayDelete(){
+//         overlayBlog.remove();
+//         overlay.style.opacity = "0";
+//         overlay.style.visibility = "hidden";
+//     }
+//     iconOverlay.addEventListener("click",()=>{
+//         overlayDelete();
+//     })
+// }
 
 // load lai trang
 window.addEventListener("load", () => {
     // notify();
     // notifyCart();
     genderCash();
-    setTimeout(()=>{
-        genderOverlay();
-    },2000)
+    // setTimeout(()=>{
+    //     genderOverlay();
+    // },2000)
   
 });
